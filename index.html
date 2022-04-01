@@ -7,17 +7,14 @@
   </head>
 
   <body>
-    <!-- navigation -->
+    <!-- navigation tags - block level element -->
     <header>
       <h1>
-        <a href="/"> RUN BUDDY </a>
+        <a href="/">RUN BUDDY</a>
       </h1>
       <nav>
-        <!-- Unordered list element -->
         <ul>
-          <!-- List item element-->
           <li>
-            <!-- Anchor element -->
             <a href="#what-we-do">What We Do</a>
           </li>
           <li>
@@ -32,44 +29,49 @@
         </ul>
       </nav>
     </header>
+    <!-- end navigation --
 
     <!-- hero/jumbotron -->
     <section class="hero">
       <div class="hero-cta">
-        <h2>Start Building Habbits.</h2>
+        <h2>Start Building Habits.</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-          nostrum facilis amet incidunt ex alias. Alias, neque? Laborum magni
-          maiores atque enim dolorum, architecto reiciendis, tenetur beatae
-          eveniet voluptatibus repellat!
+          seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion
+          axe occupy readymade put a bird on it messenger bag Wes Anderson
+          Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag
+          trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO
+          Banksy chillwave bicycle rights retro cliche tattooed bespoke irony
+          mumblecore Shoreditch deep v polaroid McSweeney's bitters cray
+          gentrify tofu Marfa you probably haven't heard of them yr banh mi
+          asymmetrical art party selvage letterpress High Life.
         </p>
       </div>
 
       <div class="hero-form">
         <h3>Get Started Today</h3>
         <p>
-          Fill out this form and one of our trainers will schedule a consult
+          Fill out this form and one of our trainers will schedule a consult.
         </p>
         <form>
           <label for="name">Enter full name:</label>
           <input
             type="text"
             placeholder="Your Name"
-            name="name"
             id="name"
+            name="name"
             class="form-input"
           />
           <label for="email">Enter email address:</label>
           <input
-            type="text"
+            type="email"
             placeholder="Email Address"
-            name="email"
             id="email"
+            name="email"
             class="form-input"
           />
           <label for="phone">Enter a telephone number:</label>
           <input
-            type="text"
+            type="tel"
             placeholder="Phone Number"
             name="phone"
             id="phone"
@@ -92,13 +94,12 @@
         </form>
       </div>
     </section>
-    <div class="flex-row">
-      <h2 class="section-title primary-border">What We Do</h2>
-      <h2 class="section-title primary-border">Meet The Trainers</h2>
-      <h2 class="section-title secondary-border">Reach Out</h2>
-    </div>
-    <!-- "what we do" section -->
+    <!-- end header -->
+    <!-- "what we do" start - <section> -->
     <section id="what-we-do" class="intro">
+      <div class="flex-row">
+        <h2 class="section-title primary-border">What We Do</h2>
+      </div>
       <div class="flex-row">
         <p>
           butcher selfies chambray shabby chic gentrify readymade yr Echo Park
@@ -110,38 +111,66 @@
         </p>
       </div>
     </section>
+    <!-- end "what we do" --
 
-    <!-- "what you do" section -->
+    <!-- "what you do" start -->
     <section id="what-you-do" class="steps">
-      <h2 class="section-title secondary-border">What You Do</h2>
-
-      <div>
-        <img src="./assets/images/step-1.svg" alt="" />
-        <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-        <p>You're already here, so why not?</p>
+      <div class="flex-row">
+        <h2 class="section-title secondary-border">What You Do</h2>
       </div>
-
-      <div>
-        <img src="./assets/images/step-2.svg" alt="" />
-        <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-        <p>Are you here to build muscle, lose weight, or just feel good?</p>
+      <div class="step">
+        <h3>Step 1.</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-1.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Fill Out The Form Above</h4>
+            <p>You're already here, so why not?</p>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <img src="./assets/images/step-3.svg" alt="" />
-        <h3>Step 3: <span>Get Running.</span></h3>
-        <p>
-          Hit the ground running (literally) once your trainer lays out your
-          plan.
-        </p>
+      <div class="step">
+        <h3>Step 2.</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-2.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Consult With One Of Our Trainers</h4>
+            <p>Are you here to build muscle, lose weight, or just feel good?</p>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <img src="./assets/images/step-4.svg" alt="" />
-        <h3>Step 4: <span>See Results.</span></h3>
-        <p>Bi-weekly checkins with your trainer will keep you focused</p>
+      <div class="step">
+        <h3>Step 3.</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-3.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Get Running</h4>
+            <p>
+              Hit the ground running (literally) once your trainer lays out your
+              plan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h3>Step 4.</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-4.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>See Results</h4>
+            <p>Bi-weekly checkins with your trainer will keep you focused</p>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- "what you do" end -->
 
     <!-- "meet the trainers" section -->
     <section id="your-trainers" class="trainers">
